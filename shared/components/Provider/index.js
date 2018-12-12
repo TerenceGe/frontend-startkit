@@ -10,7 +10,7 @@ addLocaleData(en)
 addLocaleData(zh)
 
 const mapStateToProps = state => ({
-  locale: state.intl.get('locale')
+  locale: state.intl.locale
 })
 
 const ConnectedIntlProvider = connect(mapStateToProps)(IntlProvider)

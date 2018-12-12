@@ -13,7 +13,6 @@ import { createMemoryHistory } from 'history'
 import { renderRoutes } from 'react-router-config'
 import cookie from 'react-cookie'
 import serialize from 'serialize-javascript'
-import Transit from 'transit-immutable-js'
 import { getInitialLang } from 'selectors/intl'
 import { flushTitle } from 'components/DocumentTitle'
 import Provider from 'components/Provider'
@@ -53,7 +52,7 @@ if (cluster.isMaster) {
   </head>
   <body>
     <div id="app">${root}</div>
-    <script>window.__PRELOADED_STATE__ = ${serialize(Transit.toJSON(state), { isJSON: true })}</script>
+    <script>window.__PRELOADED_STATE__ = ${serialize(state, { isJSON: true })}</script>
     <script>window.__PRELOADED_CHUNKS__ = ${JSON.stringify(chunks)}</script>
     <script src="/scripts/bundle.js?v=${__webpack_hash__}"></script>
   </body>

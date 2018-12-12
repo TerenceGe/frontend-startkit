@@ -4,7 +4,7 @@
 - [x] [React](https://facebook.github.io/react/)
 - [x] [Typescript](https://www.typescriptlang.org/)
 - [x] [Redux](https://github.com/reactjs/redux)
-- [x] [Immutable](http://facebook.github.io/immutable-js)
+- [x] [Immer](https://github.com/mweststrate/immer)
 - [x] [React Router 4](https://reacttraining.com/react-router/)
 - [x] [React Intl](https://github.com/yahoo/react-intl)
 - [x] [Redux Actions](https://github.com/acdlite/redux-actions)

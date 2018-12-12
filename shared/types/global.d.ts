@@ -11,7 +11,7 @@ declare interface Config {
 }
 
 declare interface RootState {
-  intl: any
+  intl?: any
 }
 
 declare interface FetchOptions {
@@ -21,7 +21,7 @@ declare interface FetchOptions {
 }
 
 declare interface Window {
-  __PRELOADED_STATE__?: string
+  __PRELOADED_STATE__?: RootState
   __PRELOADED_CHUNKS__?: string[]
   Intl?: any
   __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: any

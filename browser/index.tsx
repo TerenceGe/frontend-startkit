@@ -7,7 +7,6 @@ import { AppContainer } from 'react-hot-loader'
 import { ConnectedRouter } from 'react-router-redux'
 import { renderRoutes, RouteConfig } from 'react-router-config'
 import { createBrowserHistory } from 'history'
-import Transit from 'transit-immutable-js'
 import Provider from 'components/Provider'
 import * as bundles from 'routes/async'
 import { errorLoading } from 'utils'
@@ -15,7 +14,7 @@ import configure from 'store'
 import routes from 'routes'
 import sagas from 'sagas'
 
-const preloadedState = window.__PRELOADED_STATE__ && Transit.fromJSON(window.__PRELOADED_STATE__)
+const preloadedState = window.__PRELOADED_STATE__ || {}
 const preloadedChunks = window.__PRELOADED_CHUNKS__ || []
 const browserHistory = createBrowserHistory()
 const store = configure(preloadedState, browserHistory)

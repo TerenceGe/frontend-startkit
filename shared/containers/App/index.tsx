@@ -40,7 +40,7 @@ const renderRoutes = (routes: RouteComponent[], extraProps = {}, switchProps = {
 
 @connect(
   (state: any) => ({
-    locale: state.intl.get('locale')
+    locale: state.intl.locale
   })
 )
 

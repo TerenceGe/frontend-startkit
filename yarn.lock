@@ -4619,10 +4619,10 @@ ignore@^3.3.3, ignore@^3.3.5:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
   integrity sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
 
-immutable@^3.8.1, immutable@^3.8.2:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
-  integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
+immer@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-1.8.2.tgz#111e9c9e6832c833868f3f6481758a421f63f403"
+  integrity sha512-uP9EI4hmRTlZ+d4YYmd7JMlxf8I3KPHnvWfLNjpOv/cQNRV/dKHL8L3cZ7z6OCuRQnK59Uu5LJr/KxViqAiEQQ==
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -8040,13 +8040,6 @@ redux-form@^7.4.2:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-redux-immutable@^3.0.8:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/redux-immutable/-/redux-immutable-3.1.0.tgz#cafbd686e0711261119b9c28960935dc47a49d0a"
-  integrity sha1-yvvWhuBxEmERm5wolgk13EeknQo=
-  dependencies:
-    immutable "^3.8.1"
-
 redux-saga@^0.16.2:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
@@ -9250,16 +9243,6 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
-
-transit-immutable-js@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/transit-immutable-js/-/transit-immutable-js-0.6.0.tgz#db738a54a152f75c67b51f4cabc0ebe8cdb45f9d"
-  integrity sha1-23OKVKFS91xntR9Mq8Dr6M20X50=
-
-transit-js@^0.8.846:
-  version "0.8.861"
-  resolved "https://registry.yarnpkg.com/transit-js/-/transit-js-0.8.861.tgz#829e516b80349a41fff5d59f5e6993b5473f72c9"
-  integrity sha512-4O9OrYPZw6C0M5gMTvaeOp+xYz6EF79JsyxIvqXHlt+pisSrioJWFOE80N8aCPoJLcNaXF442RZrVtdmd4wkDQ==
 
 trim-right@^1.0.1:
   version "1.0.1"

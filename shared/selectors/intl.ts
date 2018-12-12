@@ -1,6 +1,5 @@
-import Immutable from 'immutable'
 import cookie from 'react-cookie'
 
-export const getInitialLang = () => Immutable.fromJS({
+export const getInitialLang = () => ({
   locale: cookie.load('lang') || 'en'
 })
