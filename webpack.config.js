@@ -86,7 +86,13 @@ const baseConfig = {
         test: /\.css$/,
         include: resolve(__dirname, 'shared'),
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: ifProduction(false, true),
+              reloadAll: true,
+            }
+          },
           {
             loader: 'css-loader',
             query: {
@@ -106,7 +112,13 @@ const baseConfig = {
         test: /\.css$/,
         exclude: resolve(__dirname, 'shared'),
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: ifProduction(false, true),
+              reloadAll: true,
+            }
+          },
           {
             loader: 'css-loader',
             query: { minimize: true }
