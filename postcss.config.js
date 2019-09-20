@@ -1,5 +1,5 @@
 const { resolve } = require('path')
-const smartImport = require('postcss-smart-import')
+const smartImport = require('postcss-import')
 const precss = require('precss')
 const autoprefixer = require('autoprefixer')
 

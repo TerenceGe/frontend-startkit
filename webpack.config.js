@@ -29,7 +29,10 @@ const baseConfig = {
       'node_modules'
     ],
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
-    mainFiles: ['index', 'index.web']
+    mainFiles: ['index', 'index.web'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
   },
   stats: {
     colors: true,

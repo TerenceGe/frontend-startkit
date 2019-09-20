@@ -1,5 +1,3 @@
-/* @tsx */
-
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Route, Switch, RouteComponentProps } from 'react-router'

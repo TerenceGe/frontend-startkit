@@ -3,7 +3,6 @@
 import 'core-js/es6'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader'
 import { ConnectedRouter } from 'react-router-redux'
 import { renderRoutes, RouteConfig } from 'react-router-config'
 import { createBrowserHistory } from 'history'
@@ -14,6 +13,7 @@ import configure from 'store'
 import routes from 'routes'
 import sagas from 'sagas'
 
+const isPreloaded = !!window.__PRELOADED_STATE__
 const preloadedState = window.__PRELOADED_STATE__ || {}
 const preloadedChunks = window.__PRELOADED_CHUNKS__ || []
 const browserHistory = createBrowserHistory()
@@ -21,14 +21,12 @@ const store = configure(preloadedState, browserHistory)
 store.runSaga(sagas)
 
 const renderApp = (routes: RouteConfig[]) => {
-  (preloadedState ? ReactDOM.hydrate : ReactDOM.render)(
-    <AppContainer warnings={false}>
-      <Provider store={store}>
-        <ConnectedRouter history={browserHistory}>
-          {renderRoutes(routes)}
-        </ConnectedRouter>
-      </Provider>
-    </AppContainer>,
+  (isPreloaded ? ReactDOM.hydrate : ReactDOM.render)(
+    <Provider store={store}>
+      <ConnectedRouter history={browserHistory}>
+        {renderRoutes(routes)}
+      </ConnectedRouter>
+    </Provider>,
     document.getElementById('app')
   )
 }

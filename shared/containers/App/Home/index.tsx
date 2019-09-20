@@ -1,5 +1,3 @@
-/* @jsx */
-
 import React, { Component } from 'react'
 import { RouteComponentProps } from 'react-router'
 import style from './style.css'
@@ -11,7 +9,9 @@ interface Props extends RouteComponentProps<void> {
 export default class Home extends Component<Props, {}> {
   render() {
     return (
-      <div className={style.home}>hello, world</div>
+      <div className={style.home}>
+        hello, world
+      </div>
     )
   }
 }
